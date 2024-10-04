@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Contact() {
+export default function Project() {
     return(
         <>
-            <p>Contato</p>
+            <p>Projetos</p>
         </>
     );
 };

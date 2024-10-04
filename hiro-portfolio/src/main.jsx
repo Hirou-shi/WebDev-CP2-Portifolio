@@ -8,12 +8,13 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
+import Projects from './pages/Projects.jsx';
 
 const Rotas = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-    Children:[
+    children:[
       {
         index:true,
         element: <Home/>
@@ -21,7 +22,11 @@ const Rotas = createBrowserRouter([
       {
         path: "/Contact",
         element: <Contact/>
-      }
+      },
+      {
+        path: "/Projects",
+        element: <Projects/>
+      },
     ]
   }
 ])
