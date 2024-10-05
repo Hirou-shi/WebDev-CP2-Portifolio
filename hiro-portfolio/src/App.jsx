@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
-import Header from './components/Header'
 import Footer from './components/Footer'
+import Header from './components/Header-fixed'
 
 function App() {
   return (

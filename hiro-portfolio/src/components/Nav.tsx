@@ -21,7 +21,7 @@ function App() {
 const Navlinks = () => {
     return(
         <>
-            <ul className='md:flex md:gap-4 grid-rows-5 grid-flow-col gap-8'>
+            <ul className='md:flex md:gap-9 grid-rows-5 grid-flow-col gap-4 font-semibold text-[24px]'>
             <button className='rounded-3xl'>Light</button>
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/Contact'>Contacts</NavLink>
