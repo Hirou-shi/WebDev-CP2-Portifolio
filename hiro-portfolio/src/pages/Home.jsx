@@ -1,10 +1,15 @@
+import { useState } from 'react';
 import {GitButton, InstButton, LinkButton} from '../components/linksButton';
 import Izaoimg from '../components/Idegrade';
 import Skills from '../components/Skills';
 
 export default function Home(){
+
+    const[lightMode, setLightMode] = useState(false);
+
     return(
-        <body className="">
+        <body className={lightMode ? 'light' : ''}>
+            <div className="min-h-screen min-w-full bg-gradient-to-b from-[#030027] to-[#0B008D] pb-4 light:bg-white">
             <section className="text-white flex flex-row items-center p-14 pt-36 md:pt-9 lg:pl-32 leading-tight">
                     <div className='flex'>
                         <Izaoimg />
@@ -29,13 +34,14 @@ export default function Home(){
                 <p className='text-[20px] text-[#CDCDCD]'>
                     I've always been interested in technology. I am currently a Software Engineering student at FIAP and hope to graduate in 2027. I enjoy experiencing new things and my dream is to travel the world. I've never had trouble socializing and have always liked challenges to continuously improve myself.</p>
             </section>
-            <section className='flex flex-col p-16 gap-2 lg:m-12 leading-loose'>
+            <section className='text-white flex flex-col p-16 gap-2 lg:m-12 leading-loose'>
                 <h1 className='font-bold text-[30px]'>
                     Skills</h1>
                 <p className='text-[20px] text-[#CDCDCD]'>
                         I have experience with:</p>
                 <Skills />
             </section>
+            </div>
         </body>
     );
 };

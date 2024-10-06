@@ -3,6 +3,7 @@ import Nav from './Nav';
 
 const Header = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
+    const[lightMode, setLightMode] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {

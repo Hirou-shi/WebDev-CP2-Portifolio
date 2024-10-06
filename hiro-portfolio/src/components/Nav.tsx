@@ -1,28 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X} from 'lucide-react';
 
-
-function App() {
-    const [theme, setTheme] = useState("dark")
-
-    useEffect(() => {
-        if (theme === 'light') {
-            document.documentElement.classList.add("light");
-        } else {
-            document.documentElement.classList.remove("light");
-        }
-    }, [theme]);
-
-    const handleThemeSwitch = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark');
-    }
-}
 const Navlinks = () => {
     return(
         <>
             <ul className='md:flex md:gap-9 grid-rows-5 grid-flow-col gap-4 font-semibold text-[24px]'>
-            <button className='rounded-3xl'>Light</button>
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/Contact'>Contacts</NavLink>
             <NavLink to='/Projects'>Projects</NavLink>
