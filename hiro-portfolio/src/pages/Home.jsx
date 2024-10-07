@@ -8,7 +8,7 @@ export default function Home(){
     const[lightMode, setLightMode] = useState(false);
 
     return(
-        <body className={lightMode ? 'light' : ''}>
+        <section className={lightMode ? 'light' : ''}>
             <div className="min-h-screen min-w-full bg-gradient-to-b from-[#030027] to-[#0B008D] pb-4 light:bg-white">
             <section className="text-white flex flex-row items-center p-14 pt-36 md:pt-9 lg:pl-32 leading-tight">
                     <div className='flex'>
@@ -42,6 +42,6 @@ export default function Home(){
                 <Skills />
             </section>
             </div>
-        </body>
+        </section>
     );
 };

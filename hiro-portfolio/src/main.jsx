@@ -9,6 +9,9 @@ import {
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
 import Projects from './pages/Projects.jsx';
+import ProjectDetails from './pages/ProjectDetails.jsx';
+import data from './data.json';
+
 
 const Rotas = createBrowserRouter([
   {
@@ -27,6 +30,10 @@ const Rotas = createBrowserRouter([
         path: "/Projects",
         element: <Projects/>
       },
+      {
+        path: "/Projects/:id",
+        element: <ProjectDetails dados={data}/>
+      }
     ]
   }
 ])

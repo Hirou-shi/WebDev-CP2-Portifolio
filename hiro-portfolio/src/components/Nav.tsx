@@ -5,7 +5,7 @@ import { Menu, X} from 'lucide-react';
 const Navlinks = () => {
     return(
         <>
-            <ul className='md:flex md:gap-9 grid-rows-5 grid-flow-col gap-4 font-semibold text-[24px]'>
+            <ul className='flex md:flex-row md:gap-9 flex-col gap-4 font-semibold text-[24px]'>
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/Contact'>Contacts</NavLink>
             <NavLink to='/Projects'>Projects</NavLink>

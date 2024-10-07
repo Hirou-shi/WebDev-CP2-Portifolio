@@ -23,7 +23,7 @@ const Header = () => {
         >
             <section className='text-white flex items-center justify-between p-9 md:px-32'>
                 <h1 className={`font-bold text-[24px] transition-all duration-300 z-50 ${scrollPosition > 50 ? 'text-[#3523FF]' : 'text-white'}`}>Hiro I Soft Engineer</h1>
-                <div className='flex'>
+                <div className='flex md:flex-col'>
                     <Nav/>
                 </div>
             </section>
